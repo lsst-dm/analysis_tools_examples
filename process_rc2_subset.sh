@@ -1,15 +1,20 @@
-# On RSP
-source /opt/lsst/software/stack/loadLSST.bash
-# From terminal
 # Suggest to run processing on rubin-devl machines
 
+# On RSP
+# source /opt/lsst/software/stack/loadLSST.bash
 # Update weekly version as needed in the line below
 source /cvmfs/sw.lsst.eu/linux-x86_64/lsst_distrib/w_2022_30/loadLSST.bash
 setup lsst_distrib
 eups list -s | grep lsst_distrib
 
 # Users might need to create directory /project/sandbox/$USER
-cd /project/sandbox/$USER
+# Note that /project is same as /sdf/group/rubin
+
+# On RSP
+# cd /project/sandbox/$USER 
+# On rubin-devl machines
+cd /sdf/group/rubin/sandbox/$USER
+
 git clone https://github.com/lsst-dm/rc2_subset
 setup -j -r rc2_subset
 echo $RC2_SUBSET_DIR
