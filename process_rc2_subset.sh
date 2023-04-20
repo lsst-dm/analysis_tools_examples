@@ -14,6 +14,7 @@ eups list -s | grep lsst_distrib
 # Suggest to create a working directory for bootcamp exercises such as 
 # /sdf/group/rubin/user/$USER/bootcamp_2023
 # See https://developer.lsst.io/usdf/storage.html#storage-locations
+cd /sdf/group/rubin/user/$USER/bootcamp_2023
 
 git clone https://github.com/lsst-dm/rc2_subset
 setup -j -r rc2_subset
