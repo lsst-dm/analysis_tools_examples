@@ -17,6 +17,8 @@ eups list -s | grep lsst_distrib
 cd /sdf/group/rubin/user/$USER/bootcamp_2023
 
 git clone https://github.com/lsst-dm/rc2_subset
+# Check out the weekly tagged version that matches the weekly pipelines version you set up:
+git checkout w.2023.15
 setup -j -r rc2_subset
 echo $RC2_SUBSET_DIR
 cd $RC2_SUBSET_DIR
